@@ -1,7 +1,6 @@
 from django.contrib import admin
-from unfold.admin import (
-    ModelAdmin,
-)  # Замена from django.contrib import admin.ModelAdmin
+
+from unfold.admin import ModelAdmin  # Замена from django.contrib import admin.ModelAdmin
 
 from .models import User
 

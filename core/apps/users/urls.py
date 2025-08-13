@@ -1,4 +1,7 @@
-from django.urls import re_path, include
+from django.urls import (
+    include,
+    re_path,
+)
 
 
 """

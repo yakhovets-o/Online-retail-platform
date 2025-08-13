@@ -1,12 +1,21 @@
 from django.db.models import Avg
-from rest_framework import viewsets, generics, permissions, status, views
+from rest_framework import (
+    generics,
+    permissions,
+    status,
+    views,
+    viewsets,
+)
 from rest_framework.response import Response
 
-from .models import Supplier, Product
+from .models import (
+    Product,
+    Supplier,
+)
 from .serializers import (
     ProductSerializer,
-    SupplierSerializer,
     SupplierQRRequestSerializer,
+    SupplierSerializer,
 )
 from .tasks import send_qr_code_email
 

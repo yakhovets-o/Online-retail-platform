@@ -1,12 +1,14 @@
 import random
-import qrcode
 from decimal import Decimal
-from celery import shared_task
-from django.core.mail import EmailMessage
-from django.core.files.base import ContentFile
-from django.db.models import F
-from django.conf import settings
 from io import BytesIO
+
+from django.conf import settings
+from django.core.files.base import ContentFile
+from django.core.mail import EmailMessage
+from django.db.models import F
+
+import qrcode
+from celery import shared_task
 
 from .models import Supplier
 

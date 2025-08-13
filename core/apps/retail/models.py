@@ -1,11 +1,11 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 from django.utils import timezone
-from django.core.validators import MinValueValidator
 from rest_framework.exceptions import ValidationError
 
-from core.apps.users.models import User
-from core.apps.retail.mixins import CreatedUpdatedMixin
 from core.apps.retail.choices import SupplierChoices
+from core.apps.retail.mixins import CreatedUpdatedMixin
+from core.apps.users.models import User
 
 
 class Supplier(CreatedUpdatedMixin, models.Model):

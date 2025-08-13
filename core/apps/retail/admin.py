@@ -1,11 +1,19 @@
+from django.contrib import (
+    admin,
+    messages,
+)
 from django.db.models import QuerySet
 from django.urls import reverse
-from django.contrib import admin, messages
 from django.utils.html import format_html
-from unfold.admin import (
-    ModelAdmin,
-)  # Замена from django.contrib import admin.ModelAdmin
-from core.apps.retail.models import Supplier, Product, Contact
+
+from unfold.admin import ModelAdmin  # Замена from django.contrib import admin.ModelAdmin
+
+from core.apps.retail.models import (
+    Contact,
+    Product,
+    Supplier,
+)
+
 from .tasks import async_clear_data
 
 

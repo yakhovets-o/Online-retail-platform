@@ -1,7 +1,12 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from core.apps.retail.models import Supplier, Product, Contact
+from core.apps.retail.models import (
+    Contact,
+    Product,
+    Supplier,
+)
+
 
 User = get_user_model()
 

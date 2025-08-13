@@ -1,9 +1,18 @@
 import random
-from faker import Faker
-from django.utils import timezone
-from django.core.management.base import BaseCommand
+
 from django.contrib.auth import get_user_model
-from core.apps.retail.models import Supplier, Contact, Product, SupplierChoices
+from django.core.management.base import BaseCommand
+from django.utils import timezone
+
+from faker import Faker
+
+from core.apps.retail.models import (
+    Contact,
+    Product,
+    Supplier,
+    SupplierChoices,
+)
+
 
 User = get_user_model()
 fake = Faker("ru_RU")
