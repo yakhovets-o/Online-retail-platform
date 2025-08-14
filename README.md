@@ -77,7 +77,7 @@
 
 ![Админка](https://github.com/user-attachments/assets/eee9cee7-7f0c-4868-aa72-977d8f82ab75)
 
-* ***Улучшение визуальной составляющей** - ```black```, ```isort``` 
+* ***Улучшение визуальной составляющей*** - ```black```, ```isort``` 
 * ***Для более приятной работы с бд*** - ```docker compose postgres``` 
 
 ---
