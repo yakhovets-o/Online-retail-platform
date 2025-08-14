@@ -43,6 +43,8 @@
 * `Celery`: ```celery -A core.project beat --loglevel=info``` и ```celery -A core.project worker -l DEBUG -P solo```
 * Создание тестовых данных (при необходимости, количество по вкусу) `Faker`: ```python manage.py fill_bd --suppliers 40 --products 5 --users 3``` 
 
+*Стандартного конфига должно хватить на все (кроме отправки qr на почту)*
+
 ---
 #### Примеры 
 * ***Увеличение, Уменьшение долгов***
