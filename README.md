@@ -41,21 +41,27 @@
 * Создание суперпользователя: ```python manage.py createsuperuser```
 * Запуск сервера: ```python manage.py runserver```
 * `Celery`: ```celery -A core.project beat --loglevel=info``` и ```celery -A core.project worker -l DEBUG -P solo```
-* Создание тестовых данных (при необходимости, количество по вкусу): ```python manage.py fill_bd --suppliers 40 --products 5 --users 3```
+* Создание тестовых данных (при необходимости, количество по вкусу) `Faker`: ```python manage.py fill_bd --suppliers 40 --products 5 --users 3``` 
 
 ---
-#### Примеры работы `Celery`
-* ***Увеличение, Уменьшение долгов
+#### Примеры 
+* ***Увеличение, Уменьшение долгов***
 
-![API дока](https://github.com/user-attachments/assets/6faec2f3-dde3-42f0-85fc-da0946bccb42)
+![Увеличение, Уменьшение долгов](https://github.com/user-attachments/assets/6faec2f3-dde3-42f0-85fc-da0946bccb42)
 
 
-* ***Прищение долгов***
-![API дока](https://github.com/user-attachments/assets/074b1dcf-96ae-4a06-9395-ebaeb8f9d1d4)
+* ***Прощение долгов***
+![Прощение долгов](https://github.com/user-attachments/assets/074b1dcf-96ae-4a06-9395-ebaeb8f9d1d4)
 
 * ***Письмо на почту***
 
-![API дока](https://github.com/user-attachments/assets/c4b31888-7594-4107-96ec-4a9a9b701f16)
+![Письмо на почту](https://github.com/user-attachments/assets/c4b31888-7594-4107-96ec-4a9a9b701f16)
+
+* ***API***
+
+![API](https://github.com/user-attachments/assets/3de9ffc8-6d67-4473-a6ea-43f4d628511a)
+
+
 
 
 ---
@@ -71,5 +77,12 @@
 
 ![Админка](https://github.com/user-attachments/assets/eee9cee7-7f0c-4868-aa72-977d8f82ab75)
 
+* Улучшение визуальной составляющей - ```black```, ```isort``` 
+* Для более приятной работы с бд - ```docker compose postgres``` 
+
+---
+#### 🪁  Что хотел бы добавить, но не хватило времени или компетенций
+
+* 
 
 
