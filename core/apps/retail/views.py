@@ -40,7 +40,7 @@ class SupplierViewSet(viewsets.ModelViewSet):
             return Supplier.objects.none()
         return (
             Supplier.objects.select_related("contact")
-            .prefetch_related("employees", "retail")
+            .prefetch_related("employees", "products")
             .filter(contact__country__iexact=country, employees=self.request.user)
         )
 
@@ -60,7 +60,7 @@ class DebtAboveAverageListView(generics.ListAPIView):
         print(f"Current user: {self.request.user}")
         return (
             Supplier.objects.select_related("contact")
-            .prefetch_related("employees", "retail")
+            .prefetch_related("employees", "products")
             .filter(debt__gt=avg_debt, employees__in=[self.request.user])
         )
 
@@ -95,7 +95,7 @@ class SupplierByProductViewSet(viewsets.ReadOnlyModelViewSet):
                 products__id=product_id, employees=self.request.user
             )
             .select_related("contact")
-            .prefetch_related("employees", "retail")
+            .prefetch_related("employees", "products")
         )
 
 

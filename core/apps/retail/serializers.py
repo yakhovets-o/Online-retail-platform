@@ -92,7 +92,7 @@ class SupplierSerializer(serializers.ModelSerializer):
     - `type_supplier`
     - `debt`
     - `supplier`
-    - `retail`
+    - `products`
     - `employees`
     - `contact`
     """
@@ -103,13 +103,13 @@ class SupplierSerializer(serializers.ModelSerializer):
 
     class Meta:
         read_only_fields = ("debt",)
-        model = Supplier
         fields = (
             "title",
             "type_supplier",
             "debt",
             "supplier",
-            "retail",
             "employees",
             "contact",
+            "products",
         )
+        model = Supplier
